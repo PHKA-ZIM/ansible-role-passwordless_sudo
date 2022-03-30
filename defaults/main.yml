@@ -1,0 +1,3 @@
+---
+passwordless_sudo_user: "{{ ansible_user }}"
+passwordless_sudo_uninstall: false

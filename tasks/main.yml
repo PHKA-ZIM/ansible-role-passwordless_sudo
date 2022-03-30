@@ -1,0 +1,8 @@
+---
+- name: Install passwordless sudo for user
+  ansible.builtin.include_tasks: install.yml
+  when: passwordless_sudo_uninstall == false
+
+- name: Uninstall passwordless sudo for user
+  ansible.builtin.include_tasks: uninstall.yml
+  when: passwordless_sudo_uninstall == true
