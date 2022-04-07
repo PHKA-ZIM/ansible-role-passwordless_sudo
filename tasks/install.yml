@@ -1,6 +1,6 @@
 ---
 - name: Create sudoers file for user
-  become: yes
+  become: true
   ansible.builtin.copy:
     content: "{{ passwordless_sudo_user }} ALL=(ALL:ALL) NOPASSWD:ALL"
     dest: "/etc/sudoers.d/{{ passwordless_sudo_user }}-user"
