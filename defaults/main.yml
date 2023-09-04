@@ -1,3 +1,4 @@
 ---
 passwordless_sudo_user: "{{ ansible_user | default('') }}"
+
 passwordless_sudo_uninstall: false
